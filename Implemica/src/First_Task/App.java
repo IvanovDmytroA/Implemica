@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
  * N вводится с клавиатуры. N неотрицательное целое число.
  */
 
-public class App {
+public final class App {
 	
 	// Declare a method that solves the problem
 	
@@ -22,11 +22,11 @@ public class App {
 		
 		// Declare and initialize a variables which the method will return.
 		long result = 0;
-		final long SMALLEST_POSSIBLE_PARAMETER = 1;
+		final long FOR_SMALLEST_POSSIBLE_PARAMETER = 1;
         
 		// If the parameter is less or equal to 0, the method will return 1.
 		if (n <= 0) {
-            return SMALLEST_POSSIBLE_PARAMETER;
+            return FOR_SMALLEST_POSSIBLE_PARAMETER;
         }
 		
 		/*

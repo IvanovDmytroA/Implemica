@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * Find the sum of the digits in the number 100! (i.e. 100 factorial) 
  */
 
-public class App {
+public final class App {
 	
 	// Declare a method that solves the task
 	public static BigInteger funct(int number){

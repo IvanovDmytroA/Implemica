@@ -14,7 +14,7 @@ import java.io.IOException;
  * is at most 200000. The name of a city is a string containing characters a,...,z and is at most 10 characters long.2) 
  */
 
-public class App {
+public final class App {
 	
 	public static void findMinimumCost(String path) throws IOException {
 		
@@ -80,14 +80,14 @@ public class App {
 	            int startingPointIndex = 0;
 	            int destinationIndex = 0;
 	            for (int i = 0; i < cities.length; i++) {
-	            	// Find the index of the initial city
+	            	// Find the index of the starting point
 					if(startingPoint.equals(cities[i])) {
 						startingPointIndex = i;
 						break;
 					}					
 				}
 	            for (int i = 0; i < cities.length; i++) {
-	                // Find the index of the destination place
+	                // Find the index of the destination city
 					if(destination.equals(cities[i])){
 						destinationIndex = i;
 						break;

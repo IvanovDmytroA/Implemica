@@ -64,10 +64,10 @@ public final class Matrix {
 		java.util.Arrays.fill(result, MAX_VALUE);
 		// Assign first top mark equal to "source", because this vertex is the starting point
 		result [source] = source;
-		// This variable will determine did we visit the city
+		// This variable will determine if we visited the city
 		boolean []visited = new boolean [value.length];
 		
-		// With for statement go around each vertex
+		// With the for statement go around each vertex
 		for (int i = 0; i < value.length; i++){
 			// Select the vertex which has a minimum mark
 			int city = findSmallestElement(result, visited);
